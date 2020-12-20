@@ -1,0 +1,42 @@
+
+.input-form {
+    width: 960px;
+    margin: 10px auto;
+    /*position: fixed;*/
+    /*top: 5%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%) translateY(-50%);*/
+    background-color: #fff;
+    box-shadow: 0 2px 18px rgba(0,0,0,.15);
+    border-radius: 4px;
+}
+#search, #near, #near:focus, #search:focus {
+    border-style: none;
+    box-shadow: none;
+}
+.input-form label:first-child::after {
+    content: '|';
+    margin-right: 5px;
+}
+.input-text {
+    margin-left: 4px;
+    font-weight: bolder;
+    color: gray;
+}
+.searchType {
+    position: absolute;
+    top: 100%;
+    width: 46%;
+    background-color: #fff;
+}
+.nearType {
+    left: 46%;
+}
+.searchType li {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 6px;
+}
+.searchType li:hover {
+    background-color: rgb(0, 115, 187);
+}
